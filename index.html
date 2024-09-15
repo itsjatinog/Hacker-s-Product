@@ -12,5 +12,58 @@
             <img src="https://i.postimg.cc/7ZcYprpX/minecraft-title-5.png" alt="Your Logo" class="logo">
         </div>
     </div>
+    <style>
+        
+    	* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+.background {
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    animation: backgroundScroll 10s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.logo-container {
+    animation: moveUpDown 8s ease-in-out infinite;
+}
+
+.logo {
+    width: 150px; /* Adjust size as needed */
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes backgroundScroll {
+    0% {
+        background-position: center top;
+    }
+    50% {
+        background-position: center bottom;
+    }
+    100% {
+        background-position: center top;
+    }
+}
+   
+    </style>
 </body>
 </html>
